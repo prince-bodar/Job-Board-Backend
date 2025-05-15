@@ -8,11 +8,11 @@ const API = axios.create({
 });
 
 const api = {
-  getAllJobs: () => API.get('/'),
-  getJobById: (id) => API.get(`/${id}`),
-  postJob: (data) => API.post('/', data),
-  updateJob: (id, data) => API.put(`/${id}`, data),
-  deleteJob: (id) => API.delete(`/${id}`),
+  getAllJobs: () => API.get('/api/jobs/'),
+  getJobById: (id) => API.get(`/api/jobs/${id}`),
+  postJob: (data) => API.post('/api/jobs/', data),
+  updateJob: (id, data) => API.put(`/api/jobs/${id}`, data),
+  deleteJob: (id) => API.delete(`/api/jobs/${id}`),
 };
 
 export default api;

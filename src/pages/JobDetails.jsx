@@ -21,11 +21,11 @@ const JobDetails = () => {
 
   return (
     <div className="container">
-      <h2>{job.title}</h2>
-      <p><strong>Company:</strong> {job.company}</p>
-      <p><strong>Type:</strong> {job.type}</p>
-      <p><strong>Location:</strong> {job.location}</p>
-      <p><strong>Description:</strong> {job.description}</p>
+      <h2>{job.data.title}</h2>
+      <p><strong>Company:</strong> {job.data.company}</p>
+      <p><strong>Type:</strong> {job.data.type}</p>
+      <p><strong>Location:</strong> {job.data.location}</p>
+      <p><strong>Description:</strong> {job.data.description}</p>
     </div>
   );
 };
